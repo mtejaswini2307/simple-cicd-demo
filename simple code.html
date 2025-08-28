@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌟 Welcome to My Web Page 🌟
+  </header>
+
+  <p id="message">Hello! This is my first single-page website.</p>
+  
+  <button onclick="changeMessage()">Click Me!</button>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "You clicked the button! 🎉";
+    }
+  </script>
+</body>
+</html>
